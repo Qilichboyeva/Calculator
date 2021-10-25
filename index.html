@@ -1,43 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="wrap">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
       <h1 class="title">Calculator</h1>
-      <input type="text" />
+      <input type="text" value="" placeholder="0" />
       <div class="buttons_wrap">
-        <div class="button">C</div>
-        <div class="button">/</div>
-        <div class="button">*</div>
-        <div class="button">%</div>
-        <div class="button">1</div>
-        <div class="button">2</div>
-        <div class="button">3</div>
-        <div class="button">+</div>
-        <div class="button">4</div>
-        <div class="button">5</div>
-        <div class="button">6</div>
-        <div class="button">-</div>
-        <div class="button">7</div>
-        <div class="button">8</div>
-        <div class="button">9</div>
-        <div class="button">.</div>
-        <div class="button">0</div>
-        <div class="button">(</div>
-        <div class="button">)</div>
-        <div class="button">=</div>
+        <div class="buttons_row">
+          <button class="clear" onclick="handleClear()">C</button>
+          <button
+            class="button"
+            value="/"
+            onclick="showButtonValues(this.value)"
+          >
+            /
+          </button>
+          <button
+            class="button"
+            value="*"
+            onclick="showButtonValues(this.value)"
+          >
+            *
+          </button>
+          <button
+            class="button"
+            value=""
+            onclick="showButtonValues(this.value)"
+          >
+            %
+          </button>
+        </div>
+        <div class="buttons_row">
+          <button
+            class="button"
+            value="1"
+            onclick="showButtonValues(this.value)"
+          >
+            1
+          </button>
+          <button
+            class="button"
+            value="2"
+            onclick="showButtonValues(this.value)"
+          >
+            2
+          </button>
+          <button
+            class="button"
+            value="3"
+            onclick="showButtonValues(this.value)"
+          >
+            3
+          </button>
+          <button
+            class="button"
+            value="+"
+            onclick="showButtonValues(this.value)"
+          >
+            +
+          </button>
+        </div>
+        <div class="buttons_row">
+          <button
+            class="button"
+            value="4"
+            onclick="showButtonValues(this.value)"
+          >
+            4
+          </button>
+          <button
+            class="button"
+            value="5"
+            onclick="showButtonValues(this.value)"
+          >
+            5
+          </button>
+          <button
+            class="button"
+            value="6"
+            onclick="showButtonValues(this.value)"
+          >
+            6
+          </button>
+          <button
+            class="button"
+            value="-"
+            onclick="showButtonValues(this.value)"
+          >
+            -
+          </button>
+        </div>
+        <div class="buttons_row">
+          <button
+            class="button"
+            value="7"
+            onclick="showButtonValues(this.value)"
+          >
+            7
+          </button>
+          <button
+            class="button"
+            value="8"
+            onclick="showButtonValues(this.value)"
+          >
+            8
+          </button>
+          <button
+            class="button"
+            value="9"
+            onclick="showButtonValues(this.value)"
+          >
+            9
+          </button>
+          <button
+            class="button"
+            value="."
+            onclick="showButtonValues(this.value)"
+          >
+            .
+          </button>
+        </div>
+        <div class="buttons_row">
+          <button
+            class="button"
+            value="0"
+            onclick="showButtonValues(this.value)"
+          >
+            0
+          </button>
+          <button
+            class="button"
+            value="("
+            onclick="showButtonValues(this.value)"
+          >
+            (
+          </button>
+          <button
+            class="button"
+            value=")"
+            onclick="showButtonValues(this.value)"
+          >
+            )
+          </button>
+          <button class="equal" onclick="handleEqual()">=</button>
+        </div>
+        <div class="buttons_row">
+          <button class="button" onclick="handleBackSpace()">BS</button>
+        </div>
       </div>
-    </div>   
-
-
-
+    </div>
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
